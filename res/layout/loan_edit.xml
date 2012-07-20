@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:isScrollContainer="true" android:scrollbars="vertical" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <ScrollView android1:layout_width="match_parent" android1:layout_height="wrap_content" android1:id="@+id/scrollView1">
+        <LinearLayout android1:id="@+id/linearLayout2" android1:layout_width="match_parent" android1:layout_height="match_parent" android1:orientation="vertical">
+            <TableLayout android1:layout_width="match_parent" android1:id="@+id/tableLayout1" android1:layout_height="wrap_content" android1:isScrollContainer="false">
+                <TableRow android1:layout_width="wrap_content" android1:id="@+id/tableRow2" android1:layout_height="wrap_content">
+                    <TextView android1:id="@+id/TextView01" android1:layout_height="wrap_content" android1:text="Loan Amount" android1:layout_width="wrap_content" android1:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    <EditText android1:layout_weight="1" android1:layout_height="wrap_content" android1:layout_width="wrap_content" android1:inputType="numberDecimal" android1:layout_marginLeft="5dp" android1:id="@+id/principalEditText">
+
+                        <requestFocus />
+
+                    </EditText>
+                </TableRow>
+                <TableRow android1:layout_marginTop="2dp" android1:layout_width="wrap_content" android1:id="@+id/tableRow3" android1:layout_height="wrap_content">
+                    <TextView android1:id="@+id/TextView02" android1:layout_height="wrap_content" android1:text="Rate" android1:layout_width="wrap_content" android1:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    <EditText android1:layout_weight="1" android1:layout_height="wrap_content" android1:layout_width="wrap_content" android1:inputType="numberDecimal" android1:layout_marginLeft="5dp" android1:id="@+id/rateEditText">
+                    </EditText>
+                    <TextView android1:id="@+id/textView2" android1:layout_height="wrap_content" android1:text="%" android1:layout_width="wrap_content" android1:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                </TableRow>
+                <TableRow android1:layout_marginTop="2dp" android1:layout_width="wrap_content" android1:id="@+id/tableRow4" android1:layout_height="wrap_content">
+                    <TextView android1:id="@+id/TextView03" android1:layout_height="wrap_content" android1:text="Term" android1:layout_width="wrap_content" android1:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    <EditText android1:layout_weight="1" android1:layout_height="wrap_content" android1:layout_width="wrap_content" android1:inputType="number" android1:layout_marginLeft="5dp" android1:id="@+id/termEditText"></EditText>
+                    <Spinner android1:id="@+id/monthSpinner" android1:layout_width="wrap_content" android1:layout_height="wrap_content"></Spinner>
+                </TableRow>
+                <TableRow android1:layout_marginTop="2dp" android1:layout_width="wrap_content" android1:baselineAligned="false" android1:id="@+id/TableRow01">
+                    <TextView android1:id="@+id/TextView04" android1:layout_height="wrap_content" android1:text="@string/extra_payment" android1:layout_width="wrap_content" android1:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    <EditText android1:layout_weight="1" android1:layout_height="wrap_content" android1:layout_width="wrap_content" android1:inputType="numberDecimal" android1:layout_marginLeft="5dp" android1:id="@+id/extraMonthlyPaymentEditText"></EditText>
+                </TableRow>
+                <TableRow android1:layout_width="wrap_content" android1:baselineAligned="true" android1:id="@+id/TableRow02" android1:layout_height="wrap_content">
+                </TableRow>
+            </TableLayout>
+            <RelativeLayout android1:id="@+id/relativeLayout1" android1:layout_width="match_parent" android1:layout_height="wrap_content" android1:layout_margin="10dp">
+                <TableLayout android1:layout_width="wrap_content" android1:id="@+id/tableLayout2" android1:background="@drawable/monthly_payment_border" android1:layout_height="wrap_content" android1:layout_centerHorizontal="true" android1:padding="10dp">
+                    <TableRow android1:layout_width="wrap_content" android1:id="@+id/tableRow1" android1:layout_height="wrap_content" android1:layout_weight="1" android1:padding="2dp">
+                        <TextView android1:id="@+id/monthlyPaymentLabel" android1:text="@string/monthly_payment" android1:layout_width="wrap_content" android1:textAppearance="?android:attr/textAppearanceSmall" android1:textSize="15dp"></TextView>
+                        <TextView android1:layout_height="wrap_content" android1:layout_width="wrap_content" android1:paddingLeft="5dp" android1:id="@+id/minimumMonthlyLabel" android1:textSize="15dp"></TextView>
+                    </TableRow>
+                    <TableRow android1:layout_width="wrap_content" android1:id="@+id/TableRow03" android1:layout_height="wrap_content" android1:layout_weight="1" android1:padding="2dp">
+                        <TextView android1:id="@+id/TextView05" android1:layout_height="wrap_content" android1:layout_width="wrap_content" android1:textAppearance="?android:attr/textAppearanceSmall" android1:text="Extra Monthly Payment" android1:textSize="15dp"></TextView>
+                        <TextView android1:layout_height="wrap_content" android1:layout_width="wrap_content" android1:paddingLeft="5dp" android1:id="@+id/extraMonthlyLabel" android1:textSize="15dp"></TextView>
+                    </TableRow>
+                    <TableRow android1:layout_width="wrap_content" android1:id="@+id/TableRow04" android1:layout_height="wrap_content" android1:layout_weight="1" android1:padding="2dp">
+                        <TextView android1:id="@+id/TextView07" android1:layout_height="wrap_content" android1:layout_width="wrap_content" android1:textAppearance="?android:attr/textAppearanceSmall" android1:text="Total:" android1:textSize="15dp"></TextView>
+                        <TextView android1:layout_height="wrap_content" android1:layout_width="wrap_content" android1:paddingLeft="5dp" android1:id="@+id/totalMonthlyLabel" android1:textSize="15dp"></TextView>
+                    </TableRow>
+                    <TableRow android1:layout_width="wrap_content" android1:id="@+id/tableRow5" android1:layout_height="wrap_content" android1:layout_weight="1"></TableRow>
+                    <TableRow android1:layout_width="wrap_content" android1:id="@+id/tableRow6" android1:layout_height="wrap_content" android1:layout_weight="1"></TableRow>
+                    <TableRow android1:layout_width="wrap_content" android1:id="@+id/tableRow7" android1:layout_height="wrap_content" android1:layout_weight="1"></TableRow>
+                </TableLayout>
+            </RelativeLayout>
+            <LinearLayout android1:layout_marginTop="2dp" android1:layout_width="match_parent" android1:isScrollContainer="false" android1:id="@+id/linearLayout1" android1:layout_height="wrap_content">
+                <Button android1:text="@string/confirm" android1:layout_weight="1" android1:layout_height="wrap_content" android1:layout_width="match_parent" android1:id="@+id/confirm"></Button>
+                <Button android1:text="@string/cancel" android1:layout_weight="1" android1:layout_height="wrap_content" android1:layout_width="match_parent" android1:id="@+id/cancel"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

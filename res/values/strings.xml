@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Amortifier</string>
+	<string name="no_loans">No Loans Yet</string>
+	<string name="rename_loan">Rename Loan</string>
+	<string name="enter_new_loan_name">Enter name of new loan.</string>
+	<string name="menu_insert">Add Loan</string>
+	<string name="new_loan">New Loan</string>
+	<string name="menu_delete">Delete...</string>
+	<string name="title">Title</string>
+	<string name="body">Body</string>
+	<string name="confirm">Confirm</string>
+	<string name="cancel">Cancel</string>
+	<string name="ok">OK</string>
+	<string name="no_blank_names">"Blank names are not allowed"</string>
+	<string name="edit_loan">Edit Loan</string>
+	<string name="menu_edit">Edit...</string>
+	<string name="menu_rename">Rename...</string>
+	<string name="menu_scroll_to">Scroll to payment...</string>
+	<string name="amort_schedule">Amortization Schedule</string>
+	<string name="invalid_loan">Invalid Loan Data</string>
+	<string name="jump">Quick Jump</string>
+	<string name="enter_jump_number">Enter the payment to jump to.</string>
+	<string name="monthly_payment">Minimum Monthly Payment</string>
+	<string name="extra_payment">Extra\nMonthly Payment</string>
+	<string-array name="monthSpinnerOptions">
+		<item>Months</item>
+		<item>Years</item>
+	</string-array>
+</resources>
